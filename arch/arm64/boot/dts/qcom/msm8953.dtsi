@@ -53,7 +53,7 @@
 					dev = "/dev/block/platform/soc/7824900.sdhci/by-name/vendor";
 					type = "ext4";
 					mnt_flags = "ro,barrier=1,discard";
-					fsmgr_flags = "wait,avb";
+					fsmgr_flags = "wait";
 					status = "ok";
 				};
 
@@ -148,7 +148,6 @@
 
 		adsp_shmem_device_mem: adsp_shmem_device_region@0xc0100000 {
 			compatible = "shared-dma-pool";
-			label = "adsp_shmem_device_mem";
 			reusable;
 			alloc-ranges = <0x0 0xc0100000 0x0 0x08200000>;
 			alignment = <0 0x400000>;
@@ -1070,11 +1069,13 @@
 			<  883200000 9>;
 		qcom,speed6-bin-v0-cl =
 			<          0 0>,
-			<  652800000 1>,
-			< 1036800000 2>,
-			< 1401600000 3>,
-			< 1689600000 4>,
-			< 1804800000 5>;
+			<  300000000 1>,
+			<  403200000 2>,
+			<  652800000 3>,
+			< 1036800000 4>,
+			< 1401600000 5>,
+			< 1689600000 6>,
+			< 1804800000 7>;
 		qcom,speed6-bin-v0-cci =
 			<          0 0>,
 			<  261120000 1>,
