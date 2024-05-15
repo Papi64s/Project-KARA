@@ -418,6 +418,8 @@ CONFIG_PCI_LABEL=y
 #
 # Kernel Features
 #
+CONFIG_AINUR_DTS_SW=y
+
 
 #
 # ARM errata workarounds via the alternatives framework
